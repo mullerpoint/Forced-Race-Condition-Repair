@@ -81,7 +81,7 @@ int main()                    /* 'main' is obviously  the first thread, no?  Eve
 		/******    END OF THE EXIT SECTION      ******/
 
 
-		if ((errorCode = pthread_join(new_tid_no, NULL)) != 0			/* Wait for the second thread to terminate   */
+		if ((errorCode = pthread_join(new_tid_no, NULL)) != 0)			/* Wait for the second thread to terminate   */
 		{																/* before printing the results               */
 			printf("\n  Bad pthread_join: %s", strerror(errorCode));
 			return -1;
